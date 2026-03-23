@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "optimize-images": "node scripts/optimize-images.mjs",
+    "prebuild": "npm run optimize-images",
+    "predev": "npm run optimize-images",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
